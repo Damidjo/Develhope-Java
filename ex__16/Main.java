@@ -54,7 +54,6 @@ public class Main {
         private static String arProcess(String name) {
             name = name.toUpperCase();
             name = name.trim();
-            name = 
             return name;
         }
 
