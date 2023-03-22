@@ -66,11 +66,22 @@ public class Main {
      * using a for each loop and an if statement/Math.min
      */
     private static void exercise2() {
+        System.out.println("\nExercise 2:");
         List<Integer> items = Arrays.asList(300, 23, 56, 55, 84);
         int minNumber = Integer.MAX_VALUE;
         int maxNumber = 0;
-    }
-        // Write code here
+
+        System.out.println(items);
+
+        for (int element : items
+             ) {
+            minNumber = Math.min(minNumber, element);
+            maxNumber = Math.max(maxNumber, element);
+        }
+        System.out.println("Min number is: " + minNumber);
+        System.out.println("Max number is: " + maxNumber);
+        }
+
     /**
      * 3: Edit the fori loop below so it only prints the first 2 names.
      */
@@ -128,13 +139,11 @@ public class Main {
         //NEED TO FIX THIS
         System.out.println("\nEXERCISE: 5");
         for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) {
-            System.out.print("Times table: " + timesTableNumber);
             // Your fori loop here
             for (int i = 1; i <= 10; i++) {
                 int result = timesTableNumber * i;
                 System.out.print(result + " | ");
             }
-            System.out.println();
         }
     }
 }
