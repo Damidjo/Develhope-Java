@@ -1,5 +1,6 @@
 package ex__16;
 
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.List;
 
@@ -54,7 +55,13 @@ public class Main {
         private static String arProcess(String name) {
             name = name.toUpperCase();
             name = name.trim();
-            return name;
+            if (name.matches(".*\\d+.*")) {
+                return "Invalid";
+                
+            }else{
+                return name;
+            }
+
         }
 
     /**
@@ -69,5 +76,13 @@ public class Main {
         int weightInGrams = 500;
 
         // Call your function
+        automaticPrint(myLunchPrice, lunchType, description, weightInGrams);
+    }
+
+    private static void automaticPrint(double myLunchPrice, String lunchType, String description, int weightInGrams) {
+        System.out.println(myLunchPrice);
+        System.out.println(lunchType);
+        System.out.println(description);
+        System.out.println(weightInGrams);
     }
 }
