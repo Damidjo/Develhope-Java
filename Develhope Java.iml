@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bonus_1" isTestSource="false" packagePrefix="javaoop.exercises._1" />
+      <sourceFolder url="file://$MODULE_DIR$/bonus_2" isTestSource="false" packagePrefix="javaoop.exercises._2" />
+      <sourceFolder url="file://$MODULE_DIR$/bonus_3" isTestSource="false" packagePrefix="javaoop.exercises._3" />
+      <sourceFolder url="file://$MODULE_DIR$/bonus_4" isTestSource="false" packagePrefix="javaoop.exercises._4" />
+      <sourceFolder url="file://$MODULE_DIR$/ex__17" isTestSource="false" packagePrefix="javabasics._17" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
