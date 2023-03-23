@@ -10,29 +10,45 @@ public class Exercises {
 
     /**
      * 1: Create a new Class in this package
-     *
-     *    Call this class 'Course'
-     *
-     *    Inside add the following variables, using an appropriate type.
-     *    courseName, maxStudents, qualityRatingOutOf10
-     *
-     *    On top of this choose 2 variables of your choice!
+     * <p>
+     * Call this class 'Course'
+     * <p>
+     * Inside add the following variables, using an appropriate type.
+     * courseName, maxStudents, qualityRatingOutOf10
+     * <p>
+     * On top of this choose 2 variables of your choice!
      */
+    public class Course {
+        //Da me scelte
+        int courseDuration;
+        int courseDifficulty;
+        //Da me scelte
+        String courseName;
+        int maxStudents;
+        double qualityRatingOutOf10;
+    }
 
     /**
      * 2: use the class called 'Student', add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        class Student {
+            String name;
+            Integer age;
+
+        }
 
         // Use a for i loop
+        for (int i = 0; i < studentNames.size(); i++) {
+            System.out.println(studentNames.get(i) + " " + studentAges.get(i));
+        }
     }
 
     private static Student createNewStudent(String name, Integer age) {
@@ -42,7 +58,6 @@ public class Exercises {
 
         return student;
     }
-
     /*
      * 3: Finally lets edit our 'Course' class once more,
      *
