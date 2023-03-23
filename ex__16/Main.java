@@ -45,24 +45,27 @@ public class Main {
         System.out.println("\nExercise 2:");
         List<String> names = Arrays.asList("Alan   ", "Alice   ", "Ant0ni0   ", "  Aziz");
         for (String name : names) {
-            String processedName = arProcess(name);
-            System.out.print("[" + processedName + "]");
+            //String processedName = arProcess(name);
+            System.out.print(arProcess(name));
+
         }
+
     }
 
             // Call your function
+            private static String arProcess(String name) {
+                name = name.toUpperCase();
+                name = name.trim();
+                if (name.matches(".*\\d+.*")) {
+                    return "Invalid";
 
-        private static String arProcess(String name) {
-            name = name.toUpperCase();
-            name = name.trim();
-            if (name.matches(".*\\d+.*")) {
-                return "Invalid";
-                
-            }else{
-                return name;
+                }else{
+                    return name;
+                }
+
             }
 
-        }
+
 
     /**
      * 3: Write a function that prints out every variable seen in the code. It should not return anything
@@ -78,7 +81,6 @@ public class Main {
         // Call your function
         automaticPrint(myLunchPrice, lunchType, description, weightInGrams);
     }
-
     private static void automaticPrint(double myLunchPrice, String lunchType, String description, int weightInGrams) {
         System.out.println(myLunchPrice);
         System.out.println(lunchType);
