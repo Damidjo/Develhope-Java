@@ -32,15 +32,12 @@ public class Main {
         yourScore = Math.min(yourScore, 20);
         if (text.contains("a")) {
             yourScore -= 5;
-            yourScore = yourScore;
         }
         if (text.equals(text.toLowerCase())) {
             yourScore += 10;
-            yourScore = yourScore;
         }
         if (yourScore > 20) {
             yourScore *= 2;
-            yourScore = yourScore;
         }
         // End it here
 
@@ -78,8 +75,6 @@ public class Main {
                 }
 
         }
-
-
         // End it here
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourMealScore);

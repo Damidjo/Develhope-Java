@@ -133,5 +133,11 @@ public class Main {
         boolean carIsDrivingFromRightToLeft = false;
 
         //Write your code here
+        if ((carIsDrivingFromLeftToRight ^ carIsDrivingFromRightToLeft) == true) {
+            System.out.println("safe");
+        } else {
+            System.out.println("CRASH! or No cars");
+        }
     }
 }
+
