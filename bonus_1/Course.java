@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Course {
-    List<Student> students = Arrays.asList();
+    List<Student> students = List.of();
     //Da me scelte
     int courseDuration;
     int courseDifficulty;

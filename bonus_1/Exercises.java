@@ -19,6 +19,14 @@ public class Exercises {
      * <p>
      * On top of this choose 2 variables of your choice!
      */
+    static class Course {
+        String courseName;
+        int maxStudents;
+        double qualityRatingOutOf10;
+        // choose 2 more variables of your choice
+        String teacherName;
+        String courseDescription;
+    }
 
     /**
      * 2: use the class called 'Student', add variables
@@ -40,7 +48,7 @@ public class Exercises {
 
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-        createNewStudent(studentNames.get(i), studentAges.get(i));
+            createNewStudent(studentNames.get(i), studentAges.get(i));
         }
     }
 
@@ -78,14 +86,14 @@ public class Exercises {
         double sum = 0;
 
         for (int i = 0; i < studentAges.size(); i++) {
-            course.students.add(createNewStudent(studentNames.get(i), studentAges.get(i)));
+            course.students.add(new Student(studentNames.get(i), studentAges.get(i)));
         }
 
-        for (double Age : studentAges) {
-        sum = sum + Age;
+        for (double age : studentAges) {
+            sum += age;
         }
-        sum = sum / studentAges.size();
-       System.out.println(sum);
-        }
+        double averageAge = sum / studentAges.size();
+        System.out.println("Average age: " + averageAge);
+    }
 }
 
