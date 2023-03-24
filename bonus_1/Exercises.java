@@ -6,6 +6,7 @@ import java.util.List;
 public class Exercises {
     public static void main(String[] args) {
         exercise2();
+        exercise3();
     }
 
     /**
@@ -18,7 +19,14 @@ public class Exercises {
      *
      *    On top of this choose 2 variables of your choice!
      */
-
+public class Course {
+    String courseName;
+    int maxStudents;
+    double qualityRatingOutOf10;
+    //My 2 choices
+        String teacherName;
+        String courseDescription;
+    }
     /**
      * 2: use the class called 'Student', add variables
      *    (class variables are called 'fields' or 'attributes')
@@ -33,16 +41,19 @@ public class Exercises {
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
         // Use a for i loop
+        for (int i = 0; i < studentAges.size() ; i++) {
+            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
+            System.out.print(student.name);
+            System.out.print(" " + student.age + "\n");
+        }
     }
-
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
-
         // Write your code here
-
+        student.name = name;
+        student.age = age;
         return student;
     }
-
     /*
      * 3: Finally lets edit our 'Course' class once more,
      *
@@ -58,7 +69,17 @@ public class Exercises {
 
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-
         // Write your code here
+        List<Student> students = Arrays.asList(
+                createNewStudent("Alice", 23),
+                createNewStudent("Aragon", 31),
+                createNewStudent("Alex", 38)
+        );
+        double averageAge = 0;
+        for (Student student : students) {
+            averageAge += student.age;
+        }
+        averageAge /= students.size();
+        System.out.println("Average age of our students is: " + averageAge);
     }
 }
