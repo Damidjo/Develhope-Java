@@ -6,6 +6,7 @@ import java.util.List;
 public class Exercises {
     public static void main(String[] args) {
         exercise2();
+        exercise3();
     }
 
     /**
@@ -18,15 +19,6 @@ public class Exercises {
      * <p>
      * On top of this choose 2 variables of your choice!
      */
-    public class Course {
-        //Da me scelte
-        int courseDuration;
-        int courseDifficulty;
-        //Da me scelte
-        String courseName;
-        int maxStudents;
-        double qualityRatingOutOf10;
-    }
 
     /**
      * 2: use the class called 'Student', add variables
@@ -39,6 +31,7 @@ public class Exercises {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
+
         class Student {
             String name;
             Integer age;
@@ -47,7 +40,7 @@ public class Exercises {
 
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            System.out.println(studentNames.get(i) + " " + studentAges.get(i));
+        createNewStudent(studentNames.get(i), studentAges.get(i));
         }
     }
 
@@ -55,9 +48,12 @@ public class Exercises {
         Student student = new Student();
 
         // Write your code here
-
+        student.name = name;
+        student.age = age;
+        System.out.println(name + age);
         return student;
     }
+
     /*
      * 3: Finally lets edit our 'Course' class once more,
      *
@@ -75,5 +71,21 @@ public class Exercises {
         System.out.println("\nExercise 3:");
 
         // Write your code here
-    }
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        Course course = new Course();
+
+        double sum = 0;
+
+        for (int i = 0; i < studentAges.size(); i++) {
+            course.students.add(createNewStudent(studentNames.get(i), studentAges.get(i)));
+        }
+
+        for (double Age : studentAges) {
+        sum = sum + Age;
+        }
+        sum = sum / studentAges.size();
+       System.out.println(sum);
+        }
 }
+
