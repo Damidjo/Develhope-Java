@@ -12,13 +12,12 @@ public class Exercises {
 
 
     /**
-     *  1: Create a constructor inside Student that takes 'name' and 'age'
-     *
-     *     make sure to set the fields too using the 'this' keyword
-     *
-     *     Add a print statement to the constructor at the start saying "Constructing!"
-     *     Add a print statement to the constructor at the start saying "Constructed!"
-     *
+     * 1: Create a constructor inside Student that takes 'name' and 'age'
+     * <p>
+     * make sure to set the fields too using the 'this' keyword
+     * <p>
+     * Add a print statement to the constructor at the start saying "Constructing!"
+     * Add a print statement to the constructor at the start saying "Constructed!"
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
@@ -28,26 +27,41 @@ public class Exercises {
 
         for (int i = 0; i < studentAges.size(); i++) {
             // Write create students
+            Student student = new Student(studentNames.get(i), studentAges.get(i));
+            students.add(student);
+            System.out.println("Added Student: " + student.getName());
         }
     }
 
     /**
      * 2: Add 3 more constructors to student, remember you need to change the parameters
-     *    a constructor accepts in order to allow multiple.
-     *
-     *    a Constructor that takes only a student's age
-     *    a Constructor that takes only a student's name
-     *    a Constructor that does not take any parameters
+     * a constructor accepts in order to allow multiple.
+     * <p>
+     * a Constructor that takes only a student's age
+     * a Constructor that takes only a student's name
+     * a Constructor that does not take any parameters
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
+        {
 
-        // Once you've added the correct constructors uncomment the code below, there should be errors!
-//         List<Student> students = Arrays.asList(
-//         new Student("Alice", 33),
-//         new Student("Bob"),
-//         new Student(33),
-//         new Student()
-//        );
+            // Once you've added the correct constructors uncomment the code below, there should be errors!
+            List<Student> students = Arrays.asList(
+                    new Student("Alice", 33),
+                    new Student("Bob"),
+                    new Student(33),
+                    new Student()
+            );
+        } //Ho avuto un pò di dubbi, ma credo siano voluti gli "errori" che vedo
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Alice", 33));
+        students.add(new Student("Bob"));
+        students.add(new Student(33)); //come questo
+        students.add(new Student());
+        students.add(new Student("Giovanni", 25));
+        for (Student student : students) {
+            System.out.println(student.getName() + " " + student.getAge());
+
+        }
     }
 }
