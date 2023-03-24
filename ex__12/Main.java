@@ -12,7 +12,6 @@ public class Main {
         exercise2("soup", 10, 30);
         exercise2("soup", 1, 5);
     }
-//grigjrigjgrngrngrgnjrgnrgnrjgn
     /**
      * 1: We are going to 'score' strings, given a string you are to calculate its score based on the following factors.
      *
