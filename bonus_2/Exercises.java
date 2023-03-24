@@ -52,11 +52,11 @@ public class Exercises {
                     new Student(33),
                     new Student()
             );
-        }
+        } //Ho avuto un pò di dubbi, ma credo siano voluti gli "errori" che vedo
         List<Student> students = new ArrayList<>();
         students.add(new Student("Alice", 33));
         students.add(new Student("Bob"));
-        students.add(new Student(33));
+        students.add(new Student(33)); //come questo
         students.add(new Student());
         students.add(new Student("Giovanni", 25));
         for (Student student : students) {
