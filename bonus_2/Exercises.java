@@ -28,8 +28,11 @@ public class Exercises {
 
         for (int i = 0; i < studentAges.size(); i++) {
             // Write create students
+            Student student = new Student(studentNames.get(i), studentAges.get(i));
+            students.add(student);
+            System.out.println("Added Student: " + student.getName());
+            }
         }
-    }
 
     /**
      * 2: Add 3 more constructors to student, remember you need to change the parameters
@@ -43,11 +46,11 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         // Once you've added the correct constructors uncomment the code below, there should be errors!
-//         List<Student> students = Arrays.asList(
-//         new Student("Alice", 33),
-//         new Student("Bob"),
-//         new Student(33),
-//         new Student()
-//        );
+         List<Student> students = Arrays.asList(
+         new Student("Alice", 33),
+         new Student("Bob"),
+        new Student(33),
+        new Student()
+        );
     }
 }
