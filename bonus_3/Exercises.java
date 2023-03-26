@@ -20,6 +20,17 @@ public class Exercises {
         System.out.println("Exercise 1:");
 
         // Write and use your 5 getters and setters!
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = new Student();
+        s1.setName(" John");
+        s1.setAge(0);
+        s1.setGender(" Male");
+        s1.setStudentID(1);
+        s1.setCourse(" Course 1");
+        s1.setStudentID(1);
+        s1.setCourse(" Python");
+        System.out.println("Student 1: " + s1);
     }
 
     /**
@@ -36,6 +47,7 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         //Write your code here
+        //NONOSTANTE L'IF NON RIESCO A FARE IN MODO CHE NON STAMPI PRIMA DI ZERO.
     }
 
 }
