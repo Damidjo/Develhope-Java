@@ -45,7 +45,12 @@ public class Student {
     }
 
     public void setStudentID(int studentID) {
-        this.studentID = studentID;
+        if (studentID >= 0) {
+            this.studentID = studentID;
+        }else {
+            System.out.println("Student ID must be greater than 0");
+            this.studentID = this.studentID;
+        }
     }
 
     public String getCourse() {

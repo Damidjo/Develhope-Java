@@ -47,7 +47,6 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         //Write your code here
-        //NONOSTANTE L'IF NON RIESCO A FARE IN MODO CHE NON STAMPI PRIMA DI ZERO.
     }
 
 }
