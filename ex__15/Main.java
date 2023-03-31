@@ -72,7 +72,7 @@ public class Main {
         }
         System.out.println("It took " + daysToSell + " day to exit that cursed economy");
     }
-
+}
     /**
      * 3: Write answers below for the following 4 situations, should we use a while, do while, fori or for each loop?
      *    Which would work best? Why?
@@ -81,15 +81,15 @@ public class Main {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:
+     * A1: do-while, cause the customer may want to perform action multiple times before exiting.
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2:
+     * A2:foreach cause we iterate through the list of users and send an email to each user
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3:
+     * A3: fori cause we know the number of customers in our database (80)
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4:
+     * A4:while cause we want to read the file 100 lines at a time, until we reach the end of the file
      */
-}
+
