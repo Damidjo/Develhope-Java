@@ -9,15 +9,10 @@ public class ExerciseLunch {
 
     private int numberOfTimesWeHaveGotPrice = 0;
 
-    private ExerciseLunch(Double price, String nameOfDayEaten) {
+    public ExerciseLunch(Double price, String nameOfDayEaten) {
         this.price = price;
         this.nameOfDayEaten = nameOfDayEaten;
     }
-
-    public void printMaxPrice() {
-        System.out.println(MAX_PRICE);
-    }
-
     private void printLunch() {
         System.out.println("Lunch{" +
                 "price=" + price +

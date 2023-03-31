@@ -61,19 +61,14 @@ public class Main {
      *    The minimum score should be 5, if a score is lower than this increase it to 5
      */
     public static double exercise2(String mealType, double weight, double expectedScore) {
-        double yourMealScore = 0;
-        // Start your code here
-        switch(mealType) {
-            case "sandwich":
-                yourMealScore = 5 * weight;
-                break;
-            case "soup":
-                yourMealScore = 3 * weight;
-                if(yourMealScore < 5) {
-                    yourMealScore = 5;
-                    break;
-                }
-
+        double yourMealScore = switch (mealType) {
+            case "sandwich" -> 5 * weight;
+            case "soup" -> 3 * weight;
+            default -> 0;
+            // Start your code here
+        };
+        if(yourMealScore < 5) {
+            yourMealScore = 5;
         }
         // End it here
 

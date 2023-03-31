@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc3b332-d3e2-4bb3-80e6-b3b8e1af5822" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainAnimal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonus_4/ExerciseLunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/bonus_4/ExerciseLunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonus_4/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/bonus_4/Exercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Develhope Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Develhope Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Develhope Java/javaoop/exercises/_4/ExerciseLunch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Develhope Java/javaoop/exercises/_4/ExerciseLunch.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,11 +43,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/gioda/Desktop/Develhope Java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Exercises">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Exercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaoop.exercises._2.Exercises" />
       <module name="Develhope Java" />
@@ -61,12 +75,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex__10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ex__10.Main" />
+    <configuration name="MainAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainAnimal" />
+      <module name="Develhope Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="javaoop.exercises._1.Exercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaoop.exercises._1.Exercises" />
       <module name="Develhope Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ex__10.*" />
+          <option name="PATTERN" value="javaoop.exercises._1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="javaoop.exercises._3.Exercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaoop.exercises._3.Exercises" />
+      <module name="Develhope Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaoop.exercises._3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,9 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Exercises" />
-        <item itemvalue="Application.ex__10.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.javaoop.exercises._1.Exercises" />
+        <item itemvalue="Application.MainAnimal" />
+        <item itemvalue="Application.javaoop.exercises._3.Exercises" />
+        <item itemvalue="Application.Exercises" />
       </list>
     </recent_temporary>
   </component>
