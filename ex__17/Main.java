@@ -1,11 +1,13 @@
 package javabasics._17;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 public class Main {
     public static void main(String[] args) {
         exercise1();
         exercise3();
     }
-
     /**
      * 1: Write code and fix the program below, you want to accept the questionableFunds
      * into the account!
@@ -24,10 +26,13 @@ public class Main {
                             Thanks
                 """;
 
-        long questionableFundsEuro = 5_000_000_000l;
+        long questionableFundsEuro = 5_000_000_000L;
 
         //Add the questionable funds to your bank balance and print it out!
+        long total = myBankBalanceEuro + questionableFundsEuro;
+        System.out.println(total);
     }
+
 
     /**
      * 2: Given the following information, think about the MOST EFFICIENT (which uses least space)
@@ -41,11 +46,18 @@ public class Main {
      *    byte = -127 to 127
      *
      *    2a: Someone's age
+     *    int
      *    2b: The age of a baby in months
+     *    int
      *    2c: Money in a hedgefund in euros
+     *    long
      *    2d: Price of a good in euros on amazon.com
+     *    double
      *    2e: The exact weight of an apple measured by scientific equipment
+     *    double
+     *
      *    2f: The number of kilometers from any 2 places in the world
+     *    double
      */
 
     /**
@@ -63,5 +75,38 @@ public class Main {
      */
     public static void exercise3() {
         System.out.println("Exercise 3:");
+        LocalDate myDate = LocalDate.now();
+        //Current date
+        System.out.println(myDate);
+        //Day of the month
+        int dayOfMonth = myDate.getDayOfMonth();
+        System.out.println(myDate.getDayOfMonth());
+        //Day of the week
+        int dayOfWeek = myDate.getDayOfWeek().getValue();
+        System.out.println(myDate.getDayOfWeek());
+        int dayOfYear = myDate.getDayOfYear();
+        //Day of the year
+        System.out.println(myDate.getDayOfYear());
+        //Month
+        Month month = myDate.getMonth();
+        System.out.println(myDate.getMonth());
+        //Month value
+        int monthValue = myDate.getMonthValue();
+        System.out.println(myDate.getMonthValue());
+
+        LocalDate date1 = LocalDate.of(2019, Month.JANUARY, 1);
+        LocalDate date2 = LocalDate.of(2019, Month.MAY, 31);
+
+        if (myDate.isBefore(date1)) {
+            System.out.println(date1);
+        }else{
+            System.out.println(date1);
+        }
+        if (myDate.isBefore(date2)) {
+            System.out.println(date2);
+        }else{
+            System.out.println(date2);
+        }
     }
 }
+
