@@ -23,13 +23,13 @@ public class Exercises {
         Student s1 = new Student();
         Student s2 = new Student();
         Student s3 = new Student();
-        s1.setName(" John");
+        s1.setName("John");
         s1.setAge(0);
-        s1.setGender(" Male");
+        s1.setGender("Male");
         s1.setStudentID(1);
-        s1.setCourse(" Course 1");
+        s1.setCourse("Course 1");
         s1.setStudentID(1);
-        s1.setCourse(" Python");
+        s1.setCourse("Python");
         System.out.println("Student 1: " + s1);
     }
 
@@ -47,6 +47,13 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         //Write your code here
+
+        Student s = new Student();
+        s.setCourse("Kotlin");
+        s.setCourse("Java");
+        s.setCourse("Javascript");
+
+        System.out.println("Student: " + s.toString());
     }
 
 }

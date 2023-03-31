@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc3b332-d3e2-4bb3-80e6-b3b8e1af5822" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex__16/ProcessedName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex__16/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex__16/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Develhope Java/ex__16/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Develhope Java/ex__16/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonus_3/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/bonus_3/Exercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonus_3/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/bonus_3/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex__16/ProcessedName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Develhope Java/javaoop/exercises/_3/Exercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Develhope Java/javaoop/exercises/_3/Exercises.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ex__16.Main">
+  <component name="RunManager" selected="Application.Exercises">
+    <configuration name="Exercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaoop.exercises._3.Exercises" />
+      <module name="Develhope Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaoop.exercises._3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex__12.Main" />
       <module name="Develhope Java" />
@@ -55,13 +69,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainAnimal" />
-      <module name="Develhope Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exercises" />
         <item itemvalue="Application.ex__16.Main" />
         <item itemvalue="Application.ex__15.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.javaoop.exercises._1.Exercises" />
-        <item itemvalue="Application.MainAnimal" />
       </list>
     </recent_temporary>
   </component>

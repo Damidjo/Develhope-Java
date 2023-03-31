@@ -8,6 +8,14 @@ public class Student {
     private int studentID;
     private String course;
 
+    private int courseCount;
+
+    public Student() {
+        this.courseCount = 0;
+    }
+
+
+
     //GEtters and Setters
 
     public String getName() {
@@ -23,14 +31,14 @@ public class Student {
         return age;
     }
 
-    public void setAge(int age) { //NON CAPISCO PERCHE' COMUNQUE MI STAMPA IL NUMERO ZERO
+    public void setAge(int age) {
         if (age >= 0) {
             this.age = age;
-        } else {
+        }else{
             System.out.println("Age must be greater than 0");
-            this.age = this.age;
         }
     }
+
 
     public String getGender() {
         return gender;
@@ -49,7 +57,6 @@ public class Student {
             this.studentID = studentID;
         }else {
             System.out.println("Student ID must be greater than 0");
-            this.studentID = this.studentID;
         }
     }
 
@@ -59,8 +66,11 @@ public class Student {
 
     public void setCourse(String course) {
         this.course = course;
+        this.courseCount++;
     }
-
+public int getCourseCount() {
+        return courseCount;
+}
     @Override
     public String toString() {
         return "Student [name=" + name + ", age=" + age + ", gender=" + gender + ", studentID=" + studentID + ", course=" + course + "]";
