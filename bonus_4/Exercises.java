@@ -1,4 +1,4 @@
-package main.java.javaoop.exercises._4;
+package javaoop.exercises._4;
 
 import java.util.Random;
 
@@ -64,6 +64,9 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
+    public static final int WEEK_COUNT = 52;
+    public static final int DAY_COUNT = 7;
+    public static final int HOUR_COUNT = 24;
     public static void exercise4() {
         System.out.println("\nExercise 4:");
         for (int week = 0; week < 52; week++) {
