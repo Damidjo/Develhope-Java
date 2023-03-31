@@ -22,13 +22,15 @@ public class Main {
         System.out.println("Exercise 1:");
         // Put this into a function
         double celsius = 30;
-        double fahrenheit = ((celsius * 9) / 5) + 32;
+        double fahrenheit = convertCelsiusToFahrenheit(celsius);
         String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
-
-
-        // End
-        System.out.println(conversionDescription);
+        System.out.println("Conversion: "  + conversionDescription);
+        }
+    private static double convertCelsiusToFahrenheit(double celsius) {
+        double fahrenheit = ((celsius * 9) / 5) + 32;
+        return fahrenheit;
     }
+
 
     /**
      * 2: Create a function that processes and prints out all the names in the ArrayList
