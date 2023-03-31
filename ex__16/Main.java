@@ -1,5 +1,6 @@
 package ex__16;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -43,23 +44,38 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         List<String> names = Arrays.asList("Alan   ", "Alice   ", "Ant0ni0   ", "  Aziz");
+        // Call your function
+        FormatName(names);
+    }
+        public static void FormatName(List<String> names) {
+            for (String name : names) {
+                String formattedName = name.trim().toUpperCase();
+                if (!formattedName.matches("[A-Z\\\\s]+")) {
+                    System.out.println("Invalid");
+                } else {
+                    System.out.println(formattedName);
+                }
+            }
+        }
 
-        for (String name : names) {
+        /**
+         * 3: Write a function that prints out every variable seen in the code. It should not return anything
+         */
+        private static void exercise3 () {
+            System.out.println("\nExercise 3:");
+
+            double myLunchPrice = 5.99;
+            String lunchType = "sandwich";
+            String description = "Nice big sandwich";
+            int weightInGrams = 500;
+
             // Call your function
+            funPrint(myLunchPrice, lunchType, description, weightInGrams);
+        }
+        public static void funPrint(double myLunchPrice, String lunchType, String description, int weightInGram) {
+            System.out.println(myLunchPrice);
+            System.out.println(lunchType);
+            System.out.println(description);
+            System.out.println(weightInGram);
         }
     }
-
-    /**
-     * 3: Write a function that prints out every variable seen in the code. It should not return anything
-     */
-    private static void exercise3() {
-        System.out.println("\nExercise 3:");
-
-        double myLunchPrice = 5.99;
-        String lunchType = "sandwich";
-        String description = "Nice big sandwich";
-        int weightInGrams = 500;
-
-        // Call your function
-    }
-}

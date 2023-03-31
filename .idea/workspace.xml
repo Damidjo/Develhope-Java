@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc3b332-d3e2-4bb3-80e6-b3b8e1af5822" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ex__16/ProcessedName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex__12/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex__12/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex__15/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex__15/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex__16/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex__16/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Develhope Java/ex__16/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Develhope Java/ex__16/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ex__16.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex__12.Main" />
       <module name="Develhope Java" />
@@ -106,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ex__15.Main" />
         <item itemvalue="Application.ex__16.Main" />
+        <item itemvalue="Application.ex__15.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.javaoop.exercises._1.Exercises" />
         <item itemvalue="Application.MainAnimal" />
